@@ -23,7 +23,6 @@ public class Items1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items1);
         lv = (ListView) findViewById(R.id.listview);
-
         ArrayTruyen = new ArrayList<>();
         getSelect();
         adapter = new AdapterTruyen(Items1.this, R.layout.activity_items, ArrayTruyen);
@@ -55,11 +54,54 @@ public class Items1 extends AppCompatActivity {
     void getSelect(){
         int i = Select.nhanVan;
         switch (i){
-            default: get0();
-            break;
+            case 0:{
+                get0();
+                break;
+            }
+            case 1:{
+                get1();
+                break;
+            }
+            case 2:{
+                get2();
+                break;
+            }
+            case 3:{
+                get3();
+                break;
+            }
+            default: get4();
         }
     }
     void get0(){
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Chí Phèo","1941","3 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"2 đứa trẻ","1942","4 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"lão hạc","1948","2 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Đời thừa.","1942","5 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Chọn lọc","1940","3 sao"));
+    }
+    void get1(){
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Chí Phèo","1941","3 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"2 đứa trẻ","1942","4 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"lão hạc","1948","2 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Đời thừa.","1942","5 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Chọn lọc","1940","3 sao"));
+    }
+    void get2(){
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Chí Phèo","1941","3 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"2 đứa trẻ","1942","4 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"lão hạc","1948","2 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Đời thừa.","1942","5 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Chọn lọc","1940","3 sao"));
+    }
+    void get3(){
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Chí Phèo","1941","3 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"2 đứa trẻ","1942","4 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"lão hạc","1948","2 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Đời thừa.","1942","5 sao"));
+        ArrayTruyen.add(new Truyen( R.drawable.items,"Chọn lọc","1940","3 sao"));
+    }
+    void get4(){
         ArrayTruyen.add(new Truyen( R.drawable.items,"Chí Phèo","1941","3 sao"));
         ArrayTruyen.add(new Truyen( R.drawable.items,"2 đứa trẻ","1942","4 sao"));
         ArrayTruyen.add(new Truyen( R.drawable.items,"lão hạc","1948","2 sao"));
